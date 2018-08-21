@@ -6,7 +6,7 @@
  * a macro needs to be defined to chose between different flavors of the
  * algorithm.
  *
- * @date 1998 - 2013
+ * @date 1998 - 2017
  * @author Richard Delorme
  * @version 4.4
  */
@@ -270,7 +270,7 @@ int last_bit(unsigned long long b)
 
 #elif defined(USE_MSVC_X64)
 
-	unsigned long long index;
+	unsigned long index;
 	_BitScanReverse64(&index, b);
 	return (int) index;
 
